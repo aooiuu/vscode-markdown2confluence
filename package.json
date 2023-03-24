@@ -1,9 +1,9 @@
 {
   "name": "markdown2confluence",
   "displayName": "markdown2confluence",
-  "description": "",
+  "description": "vscode markdown confluence wike 实时转换插件",
   "icon": "resources/icon.png",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "publisher": "aooiu",
   "qna": "https://github.com/aooiuu/vscode-markdown2confluence/issues",
@@ -43,7 +43,8 @@
     }
   },
   "activationEvents": [
-    "markdown2confluence.openPreview"
+    "onLanguage:markdown",
+    "onCommand:markdown2confluence.openPreview"
   ],
   "scripts": {
     "build": "vsce package",
